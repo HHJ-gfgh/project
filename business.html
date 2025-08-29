@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Entrepreneur Registration</h1>
+    <a href="index.html">⬅ Back</a>
+  </header>
+
+  <main>
+    <form id="businessForm">
+      <input type="text" id="bname" placeholder="Business Name" required>
+      <input type="email" id="bemail" placeholder="Email" required>
+      <textarea id="idea" placeholder="Business Idea" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Interested Investors</h2>
+    <ul id="investorList"></ul>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

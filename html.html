@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Buddy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Sports Buddy</h1>
+    <nav>
+      <button id="showLogin">Login</button>
+      <button id="showRegister">Register</button>
+      <button id="logout" style="display:none;">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Register -->
+    <section id="registerSection" class="hidden">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <!-- Login -->
+    <section id="loginSection" class="hidden">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="hidden">
+      <h2>Welcome to Sports Buddy</h2>
+      <div id="userActions">
+        <h3>Add Sports Event</h3>
+        <form id="eventForm">
+          <input type="text" id="sportName" placeholder="Sport Name" required>
+          <input type="text" id="city" placeholder="City" required>
+          <input type="datetime-local" id="eventTime" required>
+          <button type="submit">Add Event</button>
+        </form>
+        <h3>Your Events</h3>
+        <ul id="eventList"></ul>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investor Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Investor Registration</h1>
+    <a href="index.html">⬅ Back</a>
+  </header>
+
+  <main>
+    <form id="investorForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="investment" placeholder="Investment Amount" required>
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Available Business Ideas</h2>
+    <ul id="businessList"></ul>
+  </main>
+
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
